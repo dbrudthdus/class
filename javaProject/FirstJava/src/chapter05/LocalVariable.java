@@ -18,12 +18,12 @@ public class LocalVariable {
 		}
 		// System.out.println(chk); // chk 변수는 if else블록 내에서만 사용가능한 변수
 
-		int i = 0;
+//		int i = 0;
 
 		for (int i = 0; i < 5; i++) {
 			System.out.println(i);
 		}
-		System.out.println(i);
+//		System.out.println(i);
 
 		while (lv < 5) {
 			int lv2 = 100;
