@@ -1,6 +1,5 @@
 package chapter05.other;
 
-import chapter05.ModifierProtected;
 
 public class ModifierProtectedExtends extends ModifierProtected {
 
