@@ -18,6 +18,20 @@ public class ExceptionTest {
 			System.out.println("사용가능한 index 범위를 벗어났습니다.");
 			e.printStackTrace();
 		}
+		
+		try {
+			numbers = new int[-10];
+		} catch (NegativeArraySizeException e) {
+			System.out.println("배열 생성시에는 배열의 사이즈가 음수입력은 불가능합니다.");
+		}
+		
+		String str = null;
+		
+		try {
+			str.trim();
+		} catch (NullPointerException e) {
+			System.out.println("참조값은 Null 이면 안됩니다.");
+		}
 
 	}
 

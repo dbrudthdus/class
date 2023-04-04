@@ -1,10 +1,12 @@
 package chapter10;
 
-public class BadInputException {
+public class BadInputException extends Exception {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public BadInputException(String message) {
+		super(message);
+		
 	}
 
-}
+
+	}
+  
