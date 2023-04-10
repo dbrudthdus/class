@@ -2,6 +2,7 @@ package chapter08;
 
 public class SmartPhone extends Phone {
 
+	private static String phoneNumber;
 	String model;
 
 	public SmartPhone() {
@@ -18,7 +19,7 @@ public class SmartPhone extends Phone {
 
 		// Phone phone = new Phone();
 
-		Phone smarPhone = new SmartPhone("010-3333-7777", "IOS");
+		Phone smarPhone = new SmartPhone();
 		smarPhone.turnOn();
 	}
 

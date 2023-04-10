@@ -12,7 +12,7 @@ public class LoopTest {
 		int sum = 0;
 		
 		while(num<11) {
-			System.out.println(num + " : \t " + sum);
+			System.out.println(num + " : " + sum);
 			
 			sum = sum + num;
 			
