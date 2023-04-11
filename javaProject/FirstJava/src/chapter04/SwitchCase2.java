@@ -15,10 +15,13 @@ public class SwitchCase2 {
 		switch (grade) {
 		case "admin":
 			System.out.println("삭제 기능 사용 가능");
+			break;
 		case "manager":
 			System.out.println("쓰기 기능 사용 가능");
+			break;
 		case "user":
 			System.out.println("읽기 기능 사용 가능");
+			break;
 	
 		
 		}
