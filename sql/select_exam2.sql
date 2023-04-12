@@ -2,9 +2,9 @@
 
 select * from tab;
 
-desc Book;
-desc Customer;
-desc Orders;
+select * from Book;
+select * from Customer;
+select * from Orders;
 
 -- 1. 도서번호가 1인 도서의 이름
 select bookname from book where bookid=1;
@@ -25,5 +25,5 @@ select orderid from orders where orderdate not between  '14/07/04' and '14/07/07
 select name, address from customer where name like '김%';
 
 -- 7. 성이 ‘김’씨이고 이름이 ‘아’로 끝나는 고객의 이름과 주소
-select name, address from customer where (name like '김%') and (name like '%아');
+select name, address from customer where name like '김%' and name like '%아;
 
