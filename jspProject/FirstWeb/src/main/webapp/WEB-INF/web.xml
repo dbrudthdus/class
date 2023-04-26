@@ -16,7 +16,7 @@
   </servlet>
   
   <servlet-mapping>
-   <servlet-name>DateServelt</servlet-name>
+   <servlet-name>DateServlet</servlet-name>
    <url-pattern>/now</url-pattern>
   </servlet-mapping>
   
