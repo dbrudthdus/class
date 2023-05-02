@@ -20,7 +20,7 @@ public class TodoListController extends HttpServlet{
 	TodoListService listService;
 	
 	public TodoListController() {
-		this.listService = new TodoListService();
+		this.listService = TodoListService.getIntance();
 	}
 	
 	// 화면에 리스트 출력 : get 방식의 요청
@@ -39,6 +39,8 @@ public class TodoListController extends HttpServlet{
 		// 2. Seveice에 요청 -> 응답 데이터 반환
 		
 		List<TodoDTO> list = listService.getList();
+		
+		System.out.println(list);
 		
 		
 		
