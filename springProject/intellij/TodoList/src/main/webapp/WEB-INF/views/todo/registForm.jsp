@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h1>ToDO 등록</h1>
+    <h1>ToDo 등록</h1>
     <hr>
 
     <form method="post">
