@@ -16,7 +16,9 @@ public class BoardDTO {
 
     // 업로드 한 파일의 이름
     private String file;
-
     private String regdate;
     private String updatedate;
+
+    // 작성자의 idx
+    private int memidx;
 }
