@@ -12,6 +12,14 @@ select * from tbl_board order by bno desc limit 15,5; -- 4page (4-1) * 5 = 15
 select count(*) from tbl_board;
 select * from tbl_board order by bno desc;
 
+
+select * from tbl_board;
+
+select bno, title, content, file, uname as writer, memidx
+from tbl_board b, member m
+where b.memidx=m.idx
+;
+
 -- insert
 insert into tbl_board (title, content, writer) value ('게시글 테스트1', '게시글 쓰기 테스트1', '테스터');
 -- insert into tbl_board (title, content, writer) value (#{}, #{}, #{})

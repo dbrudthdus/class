@@ -20,7 +20,7 @@ delete from tbl_todo where tno=8;
 -- delete from tbl_todo where tno=?
 
 -- DQL select
--- list
+-- listmembermembermember
 select * from tbl_todo;
 -- select * from tbl_todo
 
