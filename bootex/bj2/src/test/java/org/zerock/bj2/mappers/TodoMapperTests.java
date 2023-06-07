@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 import org.zerock.bj2.dto.TodoDTO;
 import org.zerock.bj2.dto.TodoDTO2;
+import org.zerock.bj2.dto.TodoDTO3;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -19,6 +20,36 @@ public class TodoMapperTests {
 
     @Autowired(required = false)
     private TodoMapper2 todoMapper2;
+
+    @Autowired(required = false)
+    private TodoMapper3 todoMapper3;
+
+
+    @Test
+    @Transactional
+    public void insertTest3(){
+
+        Assertions.assertNotNull(todoMapper3, "Todo mapper3");
+
+        TodoDTO3 dto = TodoDTO3.builder()
+        .title("title")
+        .content("test content")
+        .writer("test")
+        .dueDate("2023-06-07")
+        .build();
+        
+        int count = todoMapper3.insert(dto);
+
+        
+        Assertions.assertEquals(count, 1);
+        
+        log.info(("===================="));
+        log.info(dto.getTno());
+        log.info(("===================="));
+
+    }
+
+
 
 
     @Test
