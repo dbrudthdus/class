@@ -5,17 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Builder
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
-public class TodoDTO {
+@AllArgsConstructor
+public class TodoDTO2 {
     
-    private Long tno;
+    private int tno;
     private String title;
-    private String writer;
     private String content;
+    private String writer;
     private boolean complete;
     private String dueDate;
-    
+
 }

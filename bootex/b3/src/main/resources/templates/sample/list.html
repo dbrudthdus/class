@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>Hello JSP Page</h1>
+    [[${strList}]]
+
+    <ul>
+        <li th:each="str,status : ${strList}">
+           [[${status.index}]] ----------- [[${str}]]
+        </li>
+
+
+    </ul>
+
 </body>
 </html>
