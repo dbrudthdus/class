@@ -9,7 +9,7 @@ create table tbl_todo (
 )
 ;
 
-select * from tbl_todo;
+select * from tbl_todo order by tno desc;
 
 insert into tbl_todo (title, content, writer, dueDate)
 values ('Title', 'Content', 'user', '2023-06-30')
